@@ -1,0 +1,19 @@
+{
+  "name": "paperbench",
+  "version": "0.3.0",
+  "private": true,
+  "description": "A PDF editor that runs entirely in your browser. Merge, reorder, annotate, sign and compress PDFs without uploading them.",
+  "license": "MIT",
+  "scripts": {
+    "build": "python3 build.py",
+    "test": "node tests/e2e.js",
+    "bench": "node tests/compress-bench.js"
+  },
+  "dependencies": {
+    "pdf-lib": "1.17.1",
+    "pdfjs-dist": "3.11.174"
+  },
+  "devDependencies": {
+    "playwright-core": "1.47.0"
+  }
+}
